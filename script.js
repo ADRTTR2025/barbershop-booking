@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 const  form = document.getElementById("bookingform");
 const message = document.getElementById("message");
 const list = document.getElementById("bookinglist");
@@ -96,10 +98,12 @@ setTimeout(() => {
 
     
 
-function removebooking(index) {
+window.removebooking = function(index) {
     bookings.splice(index, 1);
     save();
     render();
 }
 
 render();
+
+});

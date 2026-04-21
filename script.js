@@ -106,4 +106,5 @@ window.removebooking = function(index) {
 
 render();
 
+    window.render = render;
 });

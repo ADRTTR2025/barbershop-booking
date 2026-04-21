@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title>صالون الشيوخ للحلاقة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu" onclick="togglemenu()">☰</div>
+        <div class="title">صالون الشيوخ للحلاقة</div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="#">الرئيسية</a>
+        <a href="#">حجوزاتي</a>
+        <a href="#">الخدمات</a>
+        <a href="#">تواصل معنا</a>
+    </div>
+    <div class="layout">
+        <div class="left"></div>
+        <div class="right">
+        <div class="container">
+            
+            <h2>حــجـز مـواعــيـد</h2>
+            <div class="main-content">
+            <form id="bookingform">
+                <label>الاسـم: </label>
+                <input type="text" name="name" placeholder="اكـتـب الإسم">
+
+                <label>رقـم الـجـوال: </label>
+                <input type="text" name="phone" placeholder="رقـم الـجـوال">
+
+                <label>الـخـدمـة: </label>
+                
+                <select name="service">
+                
+                <option>قـص شـعـر رأس</option>
+                <option>حـلاقـة دقـن</option>
+                <option>صـبـغـة شـعـر</option>
+                <option>صـنـفـرة وجـه</option>
+                </select>
+
+                <label>الـوقـت: </label>
+                <input type="time" name="time">
+
+                <label>الـتـاريـخ: </label>
+                <input type="date" name="date">
+
+                <button type="submit">إحــجــز</button>
+
+
+            </form>
+            <div class="booking-box">
+                <ul id="bookinglist"></ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="message">
+            <p>تـم الـحـجـز بـنـجـاح</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -98,13 +98,9 @@ setTimeout(() => {
 
     
 
-window.removebooking = function(index) {
-    bookings.splice(index, 1);
-    save();
+window.addEventListener("load", () => {
     render();
-}
+});
 
-render();
 
-    window.render = render;
 });

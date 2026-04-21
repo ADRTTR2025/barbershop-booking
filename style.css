@@ -88,6 +88,7 @@ li {
 
 .left {
     flex: 1;
+    min-height: 200px;
     background-image: url(salon2.jpg);
     background-size: cover;
     background-position: center;
@@ -111,11 +112,13 @@ li {
     }
 
     .left {
-        height: 200px;
+        width: 100%;
+        min-height: 250px;
+        display: block;
     }
 
     .right {
-        padding: 20px;
+        width: 100%;
     }
 }
 

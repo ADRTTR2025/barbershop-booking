@@ -33,7 +33,7 @@ function render() {
             currentdate = b.date;
 
             const title = document.createElement("h3");
-            title.innerText = "📅" + b.date;
+            title.innerText = `📅 ${b.date}`;
             list.appendChild(title);
 
         }
